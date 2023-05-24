@@ -1,0 +1,3 @@
+# Differentiate between append () and extend () methods?
+- APPEND() METHOD ADD ELEMENT IN LAST OF THE LIST.
+- EXTEND() METHOD ADD ITERABLE ELEMENT IN LAST OF THE LIST BUT INDIVIDUAL.
