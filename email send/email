@@ -1,0 +1,25 @@
+otp=random.randrange(100000,999999)
+print(otp)
+
+list1=["sugandhgupta.tops@gmail.com","hardikvaghasiya804@gmail.com"]
+for i in list1:
+
+    import smtplib
+
+    # creates SMTP session
+    s = smtplib.SMTP('smtp.gmail.com', 587)
+
+    # start TLS for security
+    s.starttls()
+
+    # Authentication
+    s.login("rakshitdharaiya@gmail.com", "gmwytmbuwtjjhcqc")
+
+    # message to be sent
+    message = f"Your otp is {otp}"
+
+    # sending the mail
+    s.sendmail("rakshitdharaiya@gmail.com", i, message)
+
+    # terminating the session
+    s.quit()

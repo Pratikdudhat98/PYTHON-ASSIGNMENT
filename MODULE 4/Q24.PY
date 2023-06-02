@@ -12,6 +12,3 @@ p1.area()                                # CALLING AREA  METHOD
 p1.perimeter()                       # CALLING PERIMETER METHOD
 
 
-
-π=14
-print(π)

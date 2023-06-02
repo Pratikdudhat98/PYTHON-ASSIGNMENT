@@ -1,6 +1,12 @@
 # Write a Python program to count the frequency of words in a file. 
-from collections import Counter           # USE COLLECTION MODULE IN COUNTER FUNCTION
-file=open("pratik.txt","r")        # OPEN FOR READ MODE
-a=file.read().split()           # READ AND SPLIT WITH SPACE
-print(collections.Counter(a))      
+file = open("pratik.txt","r")
+n = ' '.join(line for line in file.read().splitlines())
+n = n.split(' ')          # SPLIT WHEN SPACE
+dict= {}
+for word in n:
+    if word not in dict:                    
+        dict[word] = 1                   # COUNT FREQUENCY
+    else: 
+        dict[word] += 1
+print(dict)        
 file.close()
